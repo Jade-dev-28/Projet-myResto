@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Gallerie</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallerie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<section class="sticky-content">
+<header>
+   <div class="header">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="horaires.html">Horaires</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="gallerie.html">Gallerie</a>
+      </div>
+    <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: white;" data-width="45" data-height="38.58" onclick="openNav()"></span>
+  
+   
+   </div>
+</header>
+</section>
+
+<body>
+    
+    <h2 style="text-align:center">Gallerie</h2>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="media/lasagnes2.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="media/risoto.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="media/spaghetti.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="media/tiramisu.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="media/table2.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="media/cannoli2.jpg" style="width:100%">
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="media/lasagnes2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Lasagnes">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="media/risoto.jpg" style="width:100%" onclick="currentSlide(2)" alt="Risoto">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="media/spaghetti.jpg" style="width:100%" onclick="currentSlide(3)" alt="spaghetti">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="media/tiramisu.jpg" style="width:100%" onclick="currentSlide(4)" alt="Tiramisu">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="media/table2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Notre table">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="media/cannoli2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Cannoli">
+        </div>
+      </div>
+    </div>
+    
+
+</body>
+</html>

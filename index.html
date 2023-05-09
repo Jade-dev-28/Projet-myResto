@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Accueil</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--police italiano-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap" rel="stylesheet"><!--police italianna-->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="js/script.js"></script>
+  <title>Document</title>
+</head>
+
+<section class="sticky-content">
+<header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- lien symbole de croix  configurée pr que lorsqu'on clique dessus, il ne se passe rien -->
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="horaires.html">Horaires</a>
+        <a href="reservation.html">Réservation</a>
+        <a href="gallerie.html">Gallerie</a>
+      </div>
+      <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: #283618;" data-width="45" data-height="38.58" onclick="openNav()"></span>
+    <h1>Bella Vita</h1>
+   </div>
+</header>
+</section>
+
+
+<body>
+   <main>
+   <h2> Nos plats vedettes </h2>
+      
+      <div class="slide">
+        <div class="contener_slideshow">
+          <div class="contener_slide">
+            <div class="slid_1"><img src="media/lasagnes2.jpg"></div>
+            <div class="slid_2"><img src="media/risoto.jpg"></div>
+            <div class="slid_3"><img src="media/pates.jpg"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--SECTION AVIS-->
+      <h3>Avis</h3>
+
+      <div class="section-avis">
+         <div class="flip-card"><!--carte a retourner-->
+            <div class="flip-card-inner"><!-- partie interne de la carte et permet de la faire pivoter lorsqu'elle est survolée-->
+              <div class="flip-card-front">
+                <img src="media/cartes1.jpg" alt="Avatar" style="width:500px;height:600px;">
+              </div>
+              <div class="flip-card-back">
+                <img src="media/commentaire1.png" alt="" style="width:500px;height:600px;">
+              </div>
+            </div>
+          </div>
+          <!--commentaire2-->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="media/carte lasagnes.png" alt="Avatar" style="width:500px;height:600px;">
+              </div>
+              <div class="flip-card-back">
+                <img src="media/commentaire2.png" alt="" style="width:500px;height:600px;">
+              </div>
+            </div>
+          </div>
+      </div>
+    </main>   
+
+    <footer>
+      <div>
+         <span class="iconify" data-icon="mdi:instagram" style="color: white;" data-width="45" data-height="38.58"></span>
+         <span class="iconify" data-icon="ic:baseline-facebook" style="color: white;"  data-width="45" data-height="38.58"></span>
+         <span class="iconify" data-icon="mdi:twitter" style="color: white;" data-width="45" data-height="38.58"></span>
+      </div>
+      </footer>
+</body>
+
+
+</html>
