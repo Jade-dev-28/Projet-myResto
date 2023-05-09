@@ -1,25 +1,37 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-image: url(media/table1.jpg);
-    background-position:center;
-    
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(media/table1.jpg);
+  background-position: center;
+
 }
+
 .header {
-    width: 100%;
-    height: 300px;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-  
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
-.iconify{
-    margin-top: 100px;
-    margin-left: 50px;
+.sticky-content {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-h1{
+.iconify {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.iconify {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+h1 {
   text-align: center;
   margin-top: 10px;
 }
@@ -27,109 +39,132 @@ h1{
 
 /*barre de navigation*/
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #283618;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 30px 32px;
-    text-decoration: none;
-    font-family: 'Italiana', serif;
-    font-size: 25px;
-    color: #818181;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #283618;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 30px 32px;
+  text-decoration: none;
+  font-family: 'Italiana', serif;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*RESERVATION*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* padding contenant */
+.container {
+  padding: 16px;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 10% 30%;
+}
+
+/* largeurs des champs*/
+input[type=text],
+input[type=time],
+input[type=tel],
+input[type=email],
+input[type=date],
+input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* bouton valider */
+.registerbtn {
+  background-color: #606c38;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+  /* Pour centrer les labels et les inputs */
+  label,
+  input {
     display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
   }
 
-  /*RESERVATION*/
- 
-  
-  * {
-    box-sizing: border-box;
+  label {
+    margin-bottom: 10px;
   }
-  
-  /* padding contenant */
-  .container {
-    width: 40%;
-    padding: 16px;
-    background-color: white;
-     margin: 50px 600px;
-     border-radius: 10px;
+
+  input {
+    margin-bottom: 20px;
   }
-  
-  /* largeurs des champs*/
-  input[type=text], input[type=time], input[type=tel], input[type=email], input[type=date], input[type=number] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Overwrite default styles of hr */
-  hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-  }
-  
-  /* bouton valider */
-  .registerbtn {
-    background-color: #606c38;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  
-  .registerbtn:hover {
-    opacity: 1;
-  }
-  
-  
-  
-  footer{
-    width: 100%;
-    height: 100px;
-    background-color: black;
-    margin-top: 100px;
-    justify-content: center;
-    display: flex;
-    
-    
-    }
-    
-    footer div{
-      margin-top: -60px;
-    }
-    
-  
-  
+}
+
+
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  margin-top: 100px;
+  justify-content: center;
+  display: flex;
+
+
+}
+
+footer div {
+  margin-top: -60px;
+}

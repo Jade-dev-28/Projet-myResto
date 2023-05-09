@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <title>Réservation</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reservation.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap" rel="stylesheet">
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <script src="js/script.js"></script>
+  <title>Réservation</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reservation.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
-<header>
-   <div class="header">
-    <div id="mySidenav" class="sidenav">
+
+<section class="sticky-content">
+  <header>
+    <div class="header">
+      <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Accueil</a>
         <a href="menu.html">Menu</a>
@@ -23,50 +26,53 @@
         <a href="reservation.html">Réservation</a>
         <a href="gallerie.html">Gallerie</a>
       </div>
-    <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: #fefae0;" data-width="45" data-height="38.58" onclick="openNav()"></span>
-   </div>
-
+      <span class="iconify" data-icon="fontisto:nav-icon-a" style="color: #fefae0;" data-width="45" data-height="38.58"
+        onclick="openNav()"></span>
+    </div>
+</section>
 
 </header>
 
 <body>
-   <form action="/action_page.php">
-      <div class="container">
-        <h1>Reservation</h1>
-        <p>Remplissez le formulaire afin de reserver une table .</p>
-        <hr>
-       <label for="fname">Prénom</label>
+  <form action="/action_page.php">
+    <div class="container">
+      <h1>Reservation</h1>
+      <p>Remplissez le formulaire afin de reserver une table .</p>
+      <hr>
+      <label for="fname">Prénom</label>
       <input type="text" name="fname">
-      
+
       <label for="lname">Nom</label>
       <input type="text" name="lname"> <br>
-      
+
       <label for="tel">Telephone</label>
       <input type="tel" placeholder="Entrez votre numéro de telephone" name="tel" id="tel" required>
-      
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Entrez votre Email" name="email" id="email" required>
-    
-       <label for="date">Date</label>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Entrez votre Email" name="email" id="email" required>
+
+      <label for="date">Date</label>
       <input type='date'>
-    
-        <label for="time"><b>Heure</b></label>
-        <input type="time" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-        
-         <label for="number">Nombre de couverts</label>
+
+      <label for="time"><b>Heure</b></label>
+      <input type="time" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+
+      <label for="number">Nombre de couverts</label>
       <input type="number">
-        <hr>
-        
-    
-        <button type="submit" class="registerbtn">Valider</button>
-      </div>
-    </form>
-    <footer>
-      <div>
-         <span class="iconify" data-icon="mdi:instagram" style="color: white;" data-width="45" data-height="38.58"></span>
-         <span class="iconify" data-icon="ic:baseline-facebook" style="color: white;"  data-width="45" data-height="38.58"></span>
-         <span class="iconify" data-icon="mdi:twitter" style="color: white;" data-width="45" data-height="38.58"></span>
-      </div>
-      </footer>
+      <hr>
+
+
+      <button type="submit" class="registerbtn">Valider</button>
+    </div>
+  </form>
+  <footer>
+    <div>
+      <span class="iconify" data-icon="mdi:instagram" style="color: white;" data-width="45" data-height="38.58"></span>
+      <span class="iconify" data-icon="ic:baseline-facebook" style="color: white;" data-width="45"
+        data-height="38.58"></span>
+      <span class="iconify" data-icon="mdi:twitter" style="color: white;" data-width="45" data-height="38.58"></span>
+    </div>
+  </footer>
 </body>
+
 </html>
